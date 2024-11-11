@@ -1,0 +1,108 @@
+ // task 1 string
+
+ //Console.Write("Enter name: ");
+ //var name = Console.ReadLine();
+ //var text = " Hello ";
+ //var newText = text.Insert(text.Length,name);
+ //Console.WriteLine(newText);
+
+ //// task 2 string
+
+ //Console.Write("Enter first text: ");
+ //var firstText = Console.ReadLine();
+ //Console.Write("Enter second text: ");
+ //var secondText = Console.ReadLine();
+ //var newText = firstText.Insert(firstText.Length,secondText);
+ //var newTextTwo = newText.Insert(newText.Length,secondText);
+ //var newTextThree = newTextTwo.Insert(newTextTwo.Length, firstText);
+ //Console.WriteLine(newTextThree);
+
+
+ //// task 3 string
+
+ //Console.Write("Enter first text: ");
+ //var firstText = Console.ReadLine();
+ //Console.Write("Enter second text: ");
+ //var secondText = Console.ReadLine();
+ //var newText = firstText.Insert(2, secondText);
+
+ //Console.WriteLine(newText);
+
+
+ //// task 4 string
+
+ //Console.Write("Enter  text: ");
+ //var text = Console.ReadLine();
+ //var newText = text.Substring(4);
+
+ //Console.WriteLine($"New Text : {newText}{newText}{newText}");
+
+
+
+ // task 5 string
+
+ //Console.Write("Enter  text: ");
+ //var text = Console.ReadLine();
+ //var newText = text.Substring(0,2);
+
+ //Console.WriteLine(newText);
+
+
+ //// task 6 string
+
+ //Console.Write("Enter  text: ");
+ //var text = Console.ReadLine();
+ //if (text.Length % 2 == 0)
+ //{
+ //    var newText = text.Substring(0, text.Length / 2);
+ //    Console.Write(newText);
+ //}
+ //else
+ //{
+ //    Console.Write("Text uzunligi juft son emas");
+ //}
+
+
+ // task 7 string
+
+ //Console.Write("Enter  text: ");
+ //var text = Console.ReadLine();
+
+ //var newText = text.Substring(1, text.Length - 2);
+ //Console.Write(newText);
+
+
+ // task 8 string
+
+ //Console.Write("Enter first text: ");
+ //var firstText = Console.ReadLine();
+ //Console.Write("Enter second text: ");
+ //var secondText = Console.ReadLine();
+ //if (firstText.Length > secondText.Length)
+ //{
+ //    Console.WriteLine($"Result: {secondText}{firstText}{secondText}");
+ //}
+ //else
+ //{
+ //    Console.WriteLine($"Result: {firstText}{secondText}{firstText}");
+ //}
+
+
+ // task 9 string
+
+
+ //Console.Write("Enter first text: ");
+ //var firstText = Console.ReadLine();
+ //Console.Write("Enter second text: ");
+ //var secondText = Console.ReadLine();
+ //var newText = firstText.Remove(0, 1);
+ //var newTextTwo = secondText.Remove(0, 1);
+ //Console.WriteLine($"{newText}{newTextTwo}");
+
+ // task 10 string
+
+ Console.Write("Enter  text: ");
+ var text = Console.ReadLine();
+ var newText = text.Substring(0, 2);
+ var newTextTwo = text.Remove(0, 2);
+ Console.Write($"Result:{newTextTwo}{newText}");
