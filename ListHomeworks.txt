@@ -1,0 +1,266 @@
+namespace ListHomeworks
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            /// list task 1
+
+            //Console.Write(" lengh: ");
+            //var lenght = int.Parse(Console.ReadLine());
+
+            //var numbers = new List<int>();
+
+            //for (int i = 0; i < lenght; i++)
+            //{
+            //    Console.Write($"{i} : ");
+            //    var element = int.Parse(Console.ReadLine());
+            //    numbers.Add(element);
+            //}
+
+            //var counter = 0;
+            //foreach (var element in numbers)
+            //{
+            //    if (element >= 100 && element <= 999)
+            //    {
+            //      counter++;
+            //    }
+            //}
+            //Console.WriteLine($"result: {counter}");
+
+            /// list task 2
+
+            //Console.Write(" lengh: ");
+            //var lenght = int.Parse(Console.ReadLine());
+
+            //var numbers = new List<int>();
+
+            //for (int i = 0; i < lenght; i++)
+            //{
+            //    Console.Write($"{i} : ");
+            //    var element = int.Parse(Console.ReadLine());
+            //    numbers.Add(element);
+            //}
+
+            //var counter = 0;
+            //foreach (var element in numbers)
+            //{
+            //    if (element % 2 == 0)
+            //    {
+            //        counter++;
+            //    }
+            //}
+            //Console.WriteLine($"result: {counter}");
+
+
+            // list task 3
+
+            //Console.Write(" lengh: ");
+            //var lenght = int.Parse(Console.ReadLine());
+
+            //var numbers = new List<int>();
+
+            //for (int i = 0; i < lenght; i++)
+            //{
+            //    Console.Write($"{i} : ");
+            //    var element = int.Parse(Console.ReadLine());
+            //    numbers.Add(element);
+            //}
+
+            //var sumOfoddNumbers = 0;
+            //foreach (var element in numbers)
+            //{
+            //    if (element % 2 != 0)
+            //    {
+            //       sumOfoddNumbers += element;
+            //    }
+            //}
+            //Console.WriteLine($"result: {sumOfoddNumbers}");
+
+            //  list task 4
+
+            //Console.Write(" lengh: ");
+            //var lenght = int.Parse(Console.ReadLine());
+
+            //var numbers = new List<int>();
+
+            //for (int i = 0; i < lenght; i++)
+            //{
+            //    Console.Write($"{i} : ");
+            //    var element = int.Parse(Console.ReadLine());
+            //    numbers.Add(element);
+            //}
+
+            //var counterOfdivisibleBy3and7 = 0;
+            //foreach (var element in numbers)
+            //{
+            //    if (element % 3 == 0 && element % 7 == 0)
+            //    {
+            //        counterOfdivisibleBy3and7++;
+            //    }
+            //}
+            //Console.WriteLine($"result: {counterOfdivisibleBy3and7}");
+
+
+            // list task 5
+
+            //Console.Write(" lengh: ");
+            //var lenght = int.Parse(Console.ReadLine());
+
+            //var numbers = new List<int>();
+
+            //for (int i = 0; i < lenght; i++)
+            //{
+            //    Console.Write($"{i} : ");
+            //    var element = int.Parse(Console.ReadLine());
+            //    numbers.Add(element);
+            //}
+
+            //var counter = 0;
+            //var sumOfoddnumbers = 0;
+            //foreach (var element in numbers)
+            //{
+            //    if (element >= 10 && element <= 99 && element % 2 != 0)
+            //    {
+            //        counter++;
+            //        sumOfoddnumbers += element;
+            //    }
+            //}
+            //Console.WriteLine($"result: {counter}");
+            //Console.WriteLine($" SumOf Odd Numbers: {sumOfoddnumbers}");
+
+
+            /// list task 6
+
+            //Console.Write(" lengh: ");
+            //var lenght = int.Parse(Console.ReadLine());
+
+            //var numbers = new List<int>();
+
+            //for (int i = 0; i < lenght; i++)
+            //{
+            //    Console.Write($"{i} : ");
+            //    var element = int.Parse(Console.ReadLine());
+            //    numbers.Add(element);
+            //}
+
+            //var spareElement = numbers[0];
+            //numbers[0] = numbers[numbers.Count - 1];
+            //numbers[numbers.Count - 1] = spareElement;
+            //foreach (var element in numbers)
+            //{
+            //    Console.WriteLine($"{element} ");
+            //}
+
+            /// list task 7
+
+
+            //Console.Write(" Lenght: ");
+            //var lenght = int.Parse(Console.ReadLine());
+
+            //var numbers = new List<int>();
+            //numbers.Add(lenght);
+
+            // for (int i = 0; i< lenght; i++)
+            //{
+            //    Console.Write($"{i}: ");
+            //    var elements = int.Parse(Console.ReadLine());
+            //    numbers.Add(elements);
+            //}
+
+            //var sumOFfirstThreenumbers = 0;
+            //sumOFfirstThreenumbers = numbers[0] + numbers[1] + numbers[2];
+            //Console.WriteLine($" Result: {sumOFfirstThreenumbers} ");
+
+            // list task 8
+
+            //Console.Write(" Lenght: ");
+            //var lenght = int.Parse(Console.ReadLine());
+
+            //var numbers = new List<int>();
+            
+
+            //for (int i = 0; i < lenght; i++)
+            //{
+            //    Console.Write($"{i}: ");
+            //    var elements = int.Parse(Console.ReadLine());
+            //    numbers.Add(elements);
+            //}
+
+            //var sumOFlastThreenumbers = 0;
+            //sumOFlastThreenumbers = numbers[numbers.Count - 1] + numbers[numbers.Count -2] + numbers[numbers.Count -3];
+            //Console.WriteLine($" Result: {sumOFlastThreenumbers} ");
+
+            // list task 9
+
+            //Console.Write(" Lenght: ");
+            //var lenght = int.Parse(Console.ReadLine());
+            //var numbers = new List<int>();
+            
+            // for (int i = 0; i<lenght; i++)
+            //{
+            //    Console.Write($"{i}: ");
+            //    var elements = int.Parse(Console.ReadLine());
+            //    numbers.Add(elements);
+            //}
+
+            //var counter = 0;
+            //var secondCounter = 0;
+
+            //for (int i = 0; i < numbers.Count; i++)
+            //{
+
+            //    if (numbers[i] % 2 == 0)
+            //    {
+            //        counter++;
+            //    }
+            //    else if (numbers[i] % 2 != 0)
+            //    {
+            //        secondCounter++;
+            //    }
+            //}
+            //if (counter > secondCounter)
+            //{
+            //    Console.WriteLine(false);
+            //}
+            //else if (counter < secondCounter)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else if (counter == secondCounter)
+            //{
+            //    Console.WriteLine(" TENG");
+            // }
+
+            //  list task 10
+
+
+
+            Console.Write(" Lenght: ");
+            var lenght = int.Parse(Console.ReadLine());
+            var numbers = new List<int>();
+
+            for (int i = 0; i < lenght; i++)
+            {
+                Console.Write($"{i}: ");
+                var elements = int.Parse(Console.ReadLine());
+                numbers.Add(elements);
+            }
+
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    numbers[i] = numbers[i] * 3;
+
+                }
+               
+            }
+
+            foreach (int digits in numbers)
+            {
+                Console.WriteLine(digits);
+            }
+        }
+    }
+}
