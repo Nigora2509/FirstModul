@@ -1,0 +1,395 @@
+  ////  list task 11
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+ //var divisibleBy5 = true;
+ //for (var i = 0; i < lenght; i++)
+ //{
+ //    if (numbers[i] % 5 != 0)
+ //    {
+ //        divisibleBy5 = false;
+ //        break;
+ //    }
+
+ //}
+
+ //Console.WriteLine(divisibleBy5);
+
+
+ //  list task 12
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+
+ //if (numbers[0] > 9 && numbers[0] < 100 && numbers[1] > 9 &&
+ //    numbers[1] < 100 && numbers[2] > 9 && numbers[2] < 100)
+ //{
+ //    Console.WriteLine(true);
+ //}
+ //else
+ //{
+ //    Console.WriteLine(false);
+ //}
+
+ /// list task 13
+
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+
+ //var firstTwo = (numbers[0] % 2 == 0 && numbers[1] % 2 == 0);
+ //var lastTwo = (numbers[numbers.Count - 1] % 2 !=0 && numbers[numbers.Count - 2] % 2 != 0);
+
+ //Console.WriteLine(firstTwo && lastTwo);
+
+
+ // list task 14
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+
+ //var minValue = numbers.Min();
+ //Console.WriteLine($" Result: {minValue}");
+
+
+ /// list task 15
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+
+ //var minValue = numbers.Min();
+ //var maxValue = numbers.Max();  
+ //var sumOfminAndmaxValues = minValue + maxValue;
+ //Console.WriteLine($" Result: {sumOfminAndmaxValues}");
+
+
+ /// list task 16
+
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+
+ //for (int i = 0;i < lenght; i++)
+ //{
+ //    if (numbers[i] > 9 && numbers[i] < 100)
+ //    {
+ //        numbers[i] += 100;
+ //    }
+ //}
+ //foreach (var element in numbers)
+ //{
+ //    Console.WriteLine(element);
+ //}
+
+
+ // list task 17
+
+ // Console.Write(" Lenght: ");
+ // var lenght = int.Parse(Console.ReadLine());
+ // var numbers = new List<int>();
+
+ // for (int i = 0; i < lenght; i++)
+ // {
+ //     Console.Write($"{i}: ");
+ //     var elements = int.Parse(Console.ReadLine());
+ //     numbers.Add(elements);
+ // }
+ // var counterOfnegativeNumber = 0;
+ // var counterOfpositiveNumber = 0;
+
+ // for (int i = 0; i < lenght; i++)
+ // {
+ //     if (numbers[i] > 0)
+ //     {
+ //         counterOfpositiveNumber++;
+ //     }
+ //     else if (numbers[i] < 0)
+ //     {
+ //         counterOfnegativeNumber++;
+ //     }
+ // }
+ //Console.WriteLine($"{counterOfnegativeNumber} ta Manfiy, {counterOfpositiveNumber} ta Musbat son");
+
+
+ /// list task 18
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+
+ //var counter = 0;
+ //var firstElement = numbers[0];
+
+ //foreach (var element in numbers)
+ //{
+ //    if (element < firstElement)
+ //    {
+ //        counter++;
+ //    }
+ //}
+ //if (counter > 0)
+ //{
+ //    Console.WriteLine(counter);
+ //}
+ //else
+ //{
+ //    Console.WriteLine(" 1chi elementdan kichik elementlar yoq");
+ //}
+
+
+
+ /// list task 19
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+
+ //var sumOfelements = 0;
+ //var lastElement = numbers[numbers.Count-1];
+
+ //foreach (var element in numbers)
+ //{
+ //    if (element > lastElement)
+ //    {
+ //        sumOfelements += element;
+ //    }
+ //}
+ //if (sumOfelements > 0)
+ //{
+ //    Console.WriteLine($"Sum: {sumOfelements}");
+ //}
+ //else
+ //{
+ //    Console.WriteLine("oxirgi  elementdan katta elementlar yoq");
+ //}
+
+ ///// list task 20
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+
+ //var divisibleBy4and3 = true;
+ //for (var i = 0;i < lenght; i++)
+ //{
+ //    if (!(numbers[i] % 4 == 0 || numbers[i] % 3 == 0))
+ //    {
+ //        divisibleBy4and3 = false;
+ //        break;
+ //    }
+ //}
+ //if (divisibleBy4and3 is true)
+ //{
+ //    Console.WriteLine(" hello");
+ //}
+ //else
+ //{
+ //    Console.WriteLine(" salom ");
+ //}
+
+
+ /// list task 21
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+
+ //var increasingList = true;
+ //for (var i = 0; i < numbers.Count - 1; i++)
+ //{
+ //    if (numbers[i] >= numbers[i + 1])
+ //    {
+ //        increasingList = false;
+ //        break;
+ //    }
+ //}
+ //Console.WriteLine($" Result: {increasingList}");
+
+
+ /// list task 22
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+
+ //var waningList= true;
+ //for (var i = 0; i < numbers.Count - 1; i++)
+ //{
+ //    if (numbers[i] <= numbers[i + 1])
+ //    {
+ //        waningList = false;
+ //        break;
+ //    }
+ //}
+ //Console.WriteLine($" Result: {waningList}");
+
+
+ /// list task 23
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+
+ //var minIndex = 0;
+ //var maxIndex = 0;
+ //for (var i = 0; i < numbers.Count; i++)
+ //{
+ //    if (numbers[i] < numbers[minIndex])
+ //    {
+ //        minIndex = i;
+ //    }
+ //    if (numbers[i] > numbers[maxIndex])
+ //    { 
+ //        maxIndex = i; 
+ //    }
+
+ //}
+ //var newElement = numbers[minIndex];
+ //numbers[minIndex] = numbers[maxIndex];
+ //numbers[maxIndex] = newElement;
+ //foreach (var element in numbers)
+ //{
+ //    Console.WriteLine(element);
+ //}
+
+
+ /// list task 24
+
+
+ //Console.Write(" Lenght: ");
+ //var lenght = int.Parse(Console.ReadLine());
+ //var numbers = new List<int>();
+
+ //for (int i = 0; i < lenght; i++)
+ //{
+ //    Console.Write($"{i}: ");
+ //    var elements = int.Parse(Console.ReadLine());
+ //    numbers.Add(elements);
+ //}
+
+ //var sumOfelements = 0;
+ //foreach (var element in numbers)
+ //{
+ //    sumOfelements += element;
+ //}
+
+ //Console.WriteLine($" Result: {sumOfelements}");
+
+ ///  list task 25
+
+
+ Console.Write(" Lenght: ");
+ var lenght = int.Parse(Console.ReadLine());
+ var numbers = new List<int>();
+
+ for (int i = 0; i < lenght; i++)
+ {
+     Console.Write($"{i}: ");
+     var elements = int.Parse(Console.ReadLine());
+     numbers.Add(elements);
+ }
+
+ var maxSum = int.MinValue;
+ var firstIndex = 0;
+ var secondIndex = 0;
+ for (int i = 0; i < numbers.Count - 1; i++)
+ {
+     var sum = numbers[i] + numbers[i + 1];
+     if (sum > maxSum)
+     {
+         maxSum = sum;
+         firstIndex = i;
+         secondIndex = i + 1;
+     }
+ }
+ Console.WriteLine($"{numbers[firstIndex]}+{numbers[secondIndex]} = {maxSum} ");
