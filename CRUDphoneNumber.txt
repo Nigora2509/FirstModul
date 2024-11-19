@@ -1,0 +1,168 @@
+namespace CRUD
+{
+    internal class Program
+    {
+        public static List<string> PhoneNumbers = new List<string>();
+        public static void PhoneNumbersData()
+        {
+            PhoneNumbers.Add("+998981234671");
+            PhoneNumbers.Add("+998974234577");
+            PhoneNumbers.Add("+998977234568");
+            PhoneNumbers.Add("+998981284563");
+            PhoneNumbers.Add("+998981263693");
+        }
+
+        static void Main(string[] args)
+        {
+            PhoneNumbersData();
+            PhoneNumbersStart();
+        }
+
+        public static void PhoneNumbersStart()
+        {
+            while (true)
+            {
+                Console.WriteLine(" 1. Found Number ");
+                Console.WriteLine(" 2. Add New Number ");
+                Console.WriteLine(" 3. Delete Number ");
+                Console.WriteLine(" 4. Update Number ");
+                var option = int.Parse(Console.ReadLine());
+
+                if (option == 1)
+                {
+                    Console.Write(" Enter phone number: ");
+                    var phoneNumber = Console.ReadLine();
+                    var index = FoundPhoneNumber(phoneNumber);
+                        if (index == -1)
+                    {
+                        Console.WriteLine(" This phone number doesn't exist");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Your number in {index} index");
+                    }
+
+                }
+                else if (option == 2)
+                {
+                    Console.Write("Enter New number: ");
+                    var phoneNewnumber = Console.ReadLine();
+                    var index = AddPhoneNumber(phoneNewnumber);
+                    if (index == -1)
+                    {
+                        Console.WriteLine(" Not added");
+                    }
+                    else
+                    {
+                        Console.WriteLine($" Number is added in {index} ");
+                    }
+
+                }
+                else if (option == 3)
+                {
+                    Console.WriteLine(" Enter deleted phone number: ");
+                    var phoneNumber = Console.ReadLine();
+                    var boolResult = DeletePhoneNumber(phoneNumber);
+                    if (boolResult is true) 
+                    {
+                        Console.WriteLine(" This number is deleted ");
+                    }
+                    else
+                    {
+                        Console.WriteLine(" Not deleted ");
+                    }
+                }
+
+                else if (option == 4)
+                {
+                    Console.WriteLine(" enter old phone number: ");
+                    var oldPhoneNumber = Console.ReadLine();
+                    Console.WriteLine(" enter new phone number: ");
+                    var newPhoneNumber = Console.ReadLine();
+                    var boolresult = UpdatePhoneNumber(oldPhoneNumber, newPhoneNumber);
+                    if (boolresult is true)
+                    {
+                        Console.WriteLine(" Number is updated");
+                    }
+                    else
+                    {
+                        Console.WriteLine(" Not updated ");
+                    }
+
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+            }
+
+        }
+        public static bool ChekPhoneNumber(string phoneNumber)
+        {
+            var firstChek = phoneNumber[0] == '+';
+            var secondChek = phoneNumber[1] == '9';
+            var thirdChek = phoneNumber[2] == '9';
+            var fourthChek = phoneNumber[3] == '8';
+            var phoneLenght = phoneNumber.Length == 13;
+            var fifthChek = true;
+            for (int i = 4; i < phoneNumber.Length; i++)
+            {
+                if (Char.IsDigit(phoneNumber[i]) is false)
+                {
+                    fifthChek = false;
+
+                    break;
+
+                }
+
+
+            }
+            return fifthChek && firstChek && secondChek && thirdChek && fourthChek && phoneLenght; ;
+        }
+        public static bool DeletePhoneNumber(string phoneNumber)
+        {
+            var exists = PhoneNumbers.Contains(phoneNumber);
+            PhoneNumbers.Remove(phoneNumber);
+            return exists;
+        }
+
+        public static int FoundPhoneNumber(string phoneNumber)
+        {
+            var exists = PhoneNumbers.Contains(phoneNumber);
+            if (exists is true)
+            {
+                var indexOfPhoneNumber = PhoneNumbers.IndexOf(phoneNumber);
+                return indexOfPhoneNumber;
+            }
+            return -1;
+        }
+        public static int AddPhoneNumber(string phoneNumber)
+        {
+            var exists = PhoneNumbers.Contains(phoneNumber);
+            var IsPhoneFormat = ChekPhoneNumber(phoneNumber);
+            if (exists is true || IsPhoneFormat is false)
+            {
+                return -1;
+            }
+            PhoneNumbers.Add(phoneNumber);
+            return PhoneNumbers.Count - 1;
+        }
+
+        public static bool UpdatePhoneNumber(string oldPhoneNumber, string newPhoneNumber)
+        {
+            var index = PhoneNumbers.IndexOf(oldPhoneNumber);
+            var boolResult = false;
+            var IsPhoneFormat = ChekPhoneNumber(newPhoneNumber);
+            if (index < 0 || IsPhoneFormat is false)
+            {
+                return boolResult;
+            }
+            PhoneNumbers[index] = newPhoneNumber;
+            boolResult = true;
+            return boolResult;
+        }
+        public static List<string> GetPhoneNumbers()
+        {
+            return PhoneNumbers;
+        }
+    }
+
+}
