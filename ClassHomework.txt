@@ -1,0 +1,295 @@
+namespace NewProgram;
+
+internal class Program
+{
+    static void Main(string[] text)
+    {
+        List<Student> students = new List<Student>();
+        Student firstStudent = new Student();
+        firstStudent.FirstName = "Nodira";
+        firstStudent.LastName = "Atajanova";
+        firstStudent.Age = 19;
+        firstStudent.Adress = " Yunusobod 14/12";
+        firstStudent.Gender = "Famale";
+
+        Student secondStudent = new Student()
+        {
+            FirstName = "Nilufar",
+            LastName = "Umarova",
+            Age = 22,
+            Adress = "Olmazor 6",
+            Gender = " Famale",
+        };
+
+        /// ANIMALS
+        List<Animal> animals = new List<Animal>();
+        Animal firstAnimal = new Animal();
+        firstAnimal.Family = "Feline";
+        firstAnimal.Class = " Mammals ";
+        firstAnimal.Genus = " Cats";
+        firstAnimal.Kind = " Domastic cat";
+        firstAnimal.Color = " Grey";
+        firstAnimal.Age = "3";
+        firstAnimal.Height = 40;
+        firstAnimal.Weight = 17;
+        firstAnimal.Food = " Fish";
+        firstAnimal.Location = "Cities";
+
+
+
+
+        Animal secondAnimal = new Animal();
+        secondAnimal.Family = "Feline";
+        secondAnimal.Class = "Mammals";
+        secondAnimal.Genus = "Panthers";
+        secondAnimal.Kind = "Tiger";
+        secondAnimal.Color = "White-orange stripe";
+        secondAnimal.Age = "3";
+        secondAnimal.Height = 100;
+        secondAnimal.Weight = 250;
+        secondAnimal.Food = "Meat";
+        secondAnimal.Location = "Forest";
+
+        Animal thirdAnimal = new Animal();
+        thirdAnimal.Family = "Feline";
+        thirdAnimal.Class = "Mammals";
+        thirdAnimal.Genus = "Panthers";
+        thirdAnimal.Kind = "Panthera";
+        thirdAnimal.Color = "Black";
+        thirdAnimal.Age = "5";
+        thirdAnimal.Height = 60;
+        thirdAnimal.Weight = 70;
+        thirdAnimal.Food = "Meat";
+        thirdAnimal.Location = "Forest";
+
+        firstAnimal.DisplayInfo();
+        secondAnimal.DisplayInfo();
+        thirdAnimal.DisplayInfo();
+
+
+
+        //// RESTAURANT
+
+
+        List<Restaurant> restaurants = new List<Restaurant>();
+
+        Restaurant firstRestaurant = new Restaurant()
+        {
+            Class = " Lux",
+            Rating = "4",
+            Name = "The Sky",
+            Adres = "Taras SHevchenko street 42",
+            Phone = "+998 98 127 1718",
+            Kitchen = "Italian",
+            Interior = "Evropian",
+            Rooms = " Big and small",
+        };
+        Restaurant secondRestaurant = new Restaurant()
+        {
+            Class = " Lux",
+            Rating = "5+",
+            Name = "Rimmbambale",
+            Adres = "Osiyo street 88",
+            Phone = "+998 98 128 1516",
+            Kitchen = "Italian",
+            Interior = "Evropian",
+            Rooms = " Big ",
+        };
+
+        Restaurant thirdRestaurant = new Restaurant()
+        {
+            Class = " Lux",
+            Rating = "5+",
+            Name = "Soul",
+            Adres = "Osiyo street 15",
+            Phone = "+998 98 128 1516",
+            Kitchen = "Italian",
+            Interior = "Evropian",
+            Rooms = " Big ",
+        };
+
+        firstRestaurant.DisplayInfo();
+        secondRestaurant.DisplayInfo();
+        thirdRestaurant.DisplayInfo();
+
+        /// BOOKS-----
+
+        List<Book> books = new List<Book>();
+        Book firstBook = new Book()
+        {
+            Name = "Anna Karenina",
+            Volume = "2",
+            Author = "Tolstoy",
+            Description = "Imaginative literature",
+            Price = 10,
+            Language = "Russian",
+            Size = "864",
+            PublishedYear = 1875,
+            TranslatedLanguages = "70",
+
+
+        };
+        Book secondBook = new Book()
+
+        {
+            Name = "Voyna i MIr",
+            Volume = "4",
+            Author = "Tolstoy",
+            Description = "prose",
+            Price = 20,
+            Language = "Russian",
+            Size = "5202",
+            PublishedYear = 1865,
+            TranslatedLanguages = "70",
+
+
+        };
+
+
+        Book thirdBook = new Book()
+        {
+            Name = "Sherlok Xolms",
+            Volume = "6",
+            Author = "Artur Konan Doyl",
+            Description = "Detective",
+            Price = 80,
+            Language = "English",
+            Size = "1392",
+            PublishedYear = 1890,
+            TranslatedLanguages = "70",
+
+
+        };
+
+        ///// ---HOUSE----
+
+
+        List<House> houses = new List<House>();
+        House firstHouse = new House()
+        {
+            Kind = "House",
+            Adress = "Olmazor 17/12",
+            Size = 150,
+            Price = "90.000 $",
+            RoomsCount = 5,
+            BathroomsCount = 2,
+            NearSchool = true,
+            Parking = true,
+
+        };
+
+
+        House secondHouse = new House()
+        {
+            Kind = "House",
+            Adress = "Chilonzor 4/12",
+            Size = 180,
+            Price = "120.000 $",
+            RoomsCount = 8,
+            BathroomsCount = 2,
+            NearSchool = true,
+            Parking = true,
+
+        };
+
+
+        //// ----- SCHOOL------
+
+
+        List<School> schools = new List<School>();
+        School firstSchool = new School()
+        {
+            Kind = "State ",
+            Name = "Abror Khidoyatov",
+            Adress = "Muqimiy street 48",
+            Description = "Mathematical",
+            Year = "1960",
+            TeachersCount = 56,
+            StudentsCount = 1000,
+            Parking = true,
+            Kindergarten = false,
+
+
+        };
+        School secondSchool = new School()
+        {
+            Kind = "Private ",
+            Name = "Sehriyo",
+            Adress = "Ziyo street 8",
+            Description = "Mathematical",
+            Year = "2004",
+            TeachersCount = 40,
+            StudentsCount = 1200,
+            Parking = true,
+            Kindergarten = true,
+
+
+        };
+
+        List<Planet> planets = new List<Planet>();
+        Planet firstPlanet = new Planet()
+        {
+            Name = "Yupiter",
+            Description = "gas Giant",
+            Weight = "1,8982*10^27",
+            Diameter = 139820,
+            DistanceFromEarth = "967.000.000 ",
+            DistanceFromSun = " 778.000.000",
+            YearofDiscovered = 1610,
+            OrbitalPeriod = " 11,857",
+
+
+
+        };
+
+        Planet secondPlanet = new Planet()
+        {
+            Name = "Mars",
+            Description = "Earth group",
+            Weight = "6,4171*10^23",
+            Diameter = 6779,
+            DistanceFromEarth = "56,760.000",
+            DistanceFromSun = " 228.000.000",
+            YearofDiscovered = 1610,
+            OrbitalPeriod = " 1,881",
+
+
+
+        };
+
+        //// -----MOVIE -------
+
+        List<Movie> movies = new List<Movie>();
+
+        Movie firstMovie = new Movie()
+        {
+            Name = "Speed",
+            Jenre = "Action",
+            Duration = " 1hour 56 min",
+            Director = "John Rayt",
+            Producer = "Mark Gordan",
+            YearOfRelease = 1994,
+            BoxOffice = 229200000,
+            Language = "English",
+            Rating = 7.8,
+
+        };
+
+        
+
+        Movie secondMovie = new Movie()
+        {
+            Name = "Avatar",
+            Jenre = "Science fiction",
+            Duration = " 2 hour 42 min",
+            Director = "James Cameron",
+            Producer = "James Cameron",
+            YearOfRelease = 2009,
+            BoxOffice = 2138484277,
+            Language = "English",
+            Rating = 9.1,
+
+        };
+    }
+
+}

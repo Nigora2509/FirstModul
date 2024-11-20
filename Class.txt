@@ -1,0 +1,218 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NewProgram
+{
+    public class Animal   /// Animal
+    {
+        public string Class {  get; set; }
+
+        public string Family { get; set; }
+        public string Genus { get; set; }
+        public string Kind { get; set; }
+
+        public string Color { get; set; }
+
+        public string Age { get; set; }
+
+        public int  Height { get; set; }
+
+        public double  Weight { get; set; }
+
+        public string Food { get; set; }
+
+        public string Location { get; set; }
+
+        public void DisplayInfo()
+        {
+            var result = $" Class: {Class} , Family: {Family} ," +
+                         $" Genus: {Genus}, Kind: {Kind} ,Color: {Color} , Age :{Age} , " +
+                         $"Height: {Height} , Weight : {Weight}, Food: {Food}, Location: {Location}";
+            Console.WriteLine(result);
+        }
+
+    }
+
+}
+  public class Restaurant // Restaurant
+{
+    public string Class { get; set; }
+
+    public string Rating { get; set; }
+    public string Name { get; set; }
+
+    public string Adres     { get; set; }
+
+    public string Phone { get; set; }
+
+    public string Kitchen { get; set; }
+
+    public string Interior { get; set; }
+
+    public string Rooms { get; set; }
+
+    public void DisplayInfo()
+    {
+        var result = $" Class: {Class} , Rating: {Rating} ," +
+                     $" Name: {Name}, Adress: {Adres} ,Phone: {Phone}, kitchen: {Kitchen}," +
+                     $" Interior: {Interior}, Rooms: {Rooms}";
+        Console.WriteLine(result);
+    }
+
+}
+
+ public class Book  /// BOOKS
+ {
+     public string Name { get; set; }
+
+     public string Volume { get; set; }
+    
+     public string Author { get; set; }
+     public string Description { get; set; }
+
+     public int Price { get; set; }
+
+     public string Language { get; set; }
+
+     public string Size { get; set; }
+
+     public int PublishedYear { get; set; }
+
+     public string TranslatedLanguages { get; set; }
+
+     public void DisplayInfo()
+     {
+         var result = $" Name: {Name} , Volume: {Volume} ," +
+                      $" Author: {Author}, Description: {Description} , Price: {Price}" +
+                      $"Language {Language}, size : {Size}, PublishedYear: {PublishedYear}, " +
+                      $"TranslatedLanguages: {TranslatedLanguages}";
+         Console.WriteLine(result);
+     }
+ }
+
+  public class House /// HOUSE
+ {
+     public string Kind { get; set; }
+     public string Adress { get; set; }
+
+     public int Size { get; set; }
+
+     public string Price { get; set; }   
+
+     public int RoomsCount { get; set; }
+
+     public int BathroomsCount { get; set; }
+
+     public bool NearSchool { get; set; }
+
+     public bool Parking { get; set; }
+
+     public void DisplayInfo()
+     {
+         var result = $" Kind: {Kind} ,Adress: {Adress} ," +
+                      $" Size: {Size}, Price: {Price} ,RoomsCount: {RoomsCount}" +
+                      $" BathroomsCount: {BathroomsCount}, Nearschool: {NearSchool}," +
+                      $" Parking: {Parking}";
+         Console.WriteLine(result);
+     }
+ }
+
+
+   public class School /// SCHOOL
+{
+    public string Kind { get; set; }
+
+    public string Name { get; set; }
+
+    public string Adress { get; set; }
+
+    public string Description { get; set; }
+
+    public string Year { get; set; }    
+
+    public int TeachersCount { get; set; }
+
+    public int StudentsCount { get; set; }
+
+    public bool Parking { get; set; }
+
+    public bool Kindergarten { get; set; }
+
+    public void DisplayInfo()
+    {
+        var result = $" Kind: {Kind} , Description: {Description} ," +
+                     $" Name: {Name}, Adress: {Adress} ,Year: {Year}, TeacherCount: {TeachersCount}," +
+                     $" StudentsCount: {StudentsCount}, Parking: {Parking}, " +
+                     $"Kindergarten: {Kindergarten} ";
+        Console.WriteLine(result);
+    }
+}
+  
+  
+    public class Planet   /// PLANET
+    {
+        public string Name {  get; set; }
+        
+        public string Description { get; set; }
+
+        public string Weight { get; set; }
+
+        public double Diameter { get; set; }
+
+        public string Temperature { get; set; }
+
+        public string DistanceFromEarth { get; set; }
+
+        public string DistanceFromSun {  get; set; }
+
+        public int YearofDiscovered  { get; set; } 
+
+        public string OrbitalPeriod { get; set; }
+
+        public void DisplayInfo()
+        {
+            var result = $" Name: {Name} , Description: {Description} ," +
+                         $" Weight: {Weight}, Diameter: {Diameter} ," +
+                         $"YearofDiscovered: {YearofDiscovered}, " +
+                         $"Temperature: {Temperature}," +
+                         $" DistanceFromEarth: {DistanceFromEarth}," +
+                         $" DistanceFromSun: {DistanceFromSun}, " +
+                         $" OrbitalPeriod: {OrbitalPeriod} ";
+            Console.WriteLine(result);
+        }
+
+    }
+
+    public  class Movie   /// MOVIE
+ {
+     public string Name { get; set; }
+     public string Jenre { get; set; }
+
+     public string Duration { get; set; }
+
+     public string Director { get; set; }
+
+     public string Producer  { get; set; }
+
+     public int YearOfRelease {  get; set; }
+
+     public int BoxOffice { get; set; }
+
+     public string Language { get; set; }
+
+     public double Rating { get; set; }
+
+     public void DisplayInfo()
+     {
+         var result = $"Name: {Name} ,Jenre: {Jenre}, Duration: {Duration}," +
+             $" Director:{Director}, Producer: {Producer}, YearOfRealease: {YearOfRelease}," +
+             $" BoxOffice: {BoxOffice}, Language: {Language}, Rating: {Rating} ";
+         Console.WriteLine(result);
+     }
+
+ }
