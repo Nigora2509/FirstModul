@@ -15,9 +15,9 @@ namespace _9_dars
         while (true)
         {
             Console.WriteLine("1. Add event");
-            Console.WriteLine("2. Get Event by ID");
-            Console.WriteLine("3. Delete event");
-            Console.WriteLine("4. Update event");
+            Console.WriteLine("2. Delete evnt");
+            Console.WriteLine("3. Update event");
+            Console.WriteLine("4. Get event By Id:");
             Console.WriteLine("5. Get all events");
             Console.WriteLine("6. Get events by location");
             Console.WriteLine("7. Get popular events");
@@ -60,11 +60,66 @@ namespace _9_dars
             }
             else if (option == 2)
             {
-                Console.Write(" Enter id: ");
+                Console.Write(" Enter id to Delete: ");
                 var id = Guid.Parse(Console.ReadLine());
-                var getEvent = eventService.GetById(id);
-                string info = $
+                var dleteEvent = eventService.DeletedEvent(id);
+               if (dleteEvent is false)
+                {
+                    Console.WriteLine(" This event is not Deleted,try again");
+                }
+                else
+                {
+                    Console.WriteLine("Event is deleted");
+                }
 
+            }
+            else if (option == 3)
+            {
+                var newEvent = new Event();
+                Console.Write(" Enter id to update: ");
+                newEvent.Id = Guid.Parse(Console.ReadLine());
+                Console.Write("Enter Title: ");
+                newEvent.Title = Console.ReadLine();
+                Console.Write("Enter Location:  ");
+                newEvent.Location = Console.ReadLine();
+                Console.Write("Enter Date : ");
+                newEvent.EventDate = DateTime.Parse(Console.ReadLine());
+                Console.Write("Enter Description: ");
+                newEvent.Description = Console.ReadLine();
+
+
+                newEvent.AttendenceMembers = new List<string>();
+
+                Console.Write("Enter  members : ");
+                var count = int.Parse(Console.ReadLine());
+
+                for (var i = 0; i < count; i++)
+                {
+                    Console.Write("Enter Attendence Members: ");
+                    var members = Console.ReadLine();
+                    newEvent.AttendenceMembers.Add(members);
+                }
+
+                Console.Write("Enter tags count: ");
+                var countOfTags = int.Parse(Console.ReadLine());
+
+                for (var i = 0; i < countOfTags; i++)
+                {
+                    Console.Write("Enter tagg: ");
+                    var newTags = Console.ReadLine();
+                    newEvent.Tags.Add(newTags);
+                }
+
+                var result = eventService.UpdatedEvent( newEvent);
+
+                if (result is true)
+                {
+                    Console.WriteLine(" Successfully");
+                }
+                else
+                {
+                    Console.WriteLine(" Not updated ");
+                }
             }
         }
     }
